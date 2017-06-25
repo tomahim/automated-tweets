@@ -12,4 +12,10 @@ describe('ScheduledTweetsService', () => {
   it('should be created', inject([ScheduledTweetsService], (service: ScheduledTweetsService) => {
     expect(service).toBeTruthy();
   }));
+
+
+  it('should contain a getAll method', inject([ScheduledTweetsService], (service: ScheduledTweetsService) => {
+    expect(service.getAll).toBeDefined();
+  }));
+
 });

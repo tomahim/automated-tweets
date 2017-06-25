@@ -27,4 +27,11 @@ describe('DashboardWidgetsComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+
+  it('should use scheduled-tweets component', async(() => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('scheduled-tweets')).toBeTruthy();
+  }));
+
 });
